@@ -1,5 +1,19 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(str) {
+  // // convert the string to uppercase
+  str = str.toUpperCase();
+  
+  // split the string into an array
+    let start = 0;
+  let end = str.length -1;
+   while(start <= end) {
+    if(str[start] != str[end]){
+      return false ;
+    }
+    start++;
+    end--;
+  }
+
+  return true;
 }
 
 /* 
